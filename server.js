@@ -31,7 +31,7 @@ app.get("/", (rq, rs) => {
                 
                 JsonData[element["company"]["department"]]["hair"][element["hair"]["color"]]++;
                 
-                JsonData[element["company"]["department"]]["addressUser"][element["firstName"]+element["lastname"]] = element["address"]["postalCode"]
+                JsonData[element["company"]["department"]]["addressUser"][element["firstName"]+element["lastName"]] = element["address"]["postalCode"]
 
                 if(JsonData[element["company"]["department"]]["ageRange"][0] == 0 ){
                     JsonData[element["company"]["department"]]["ageRange"][0] = element["age"]
